@@ -1,0 +1,88 @@
+#main-header #translator-bar{
+    background: linear-gradient(to right, rgba(125,92,224,1) 0%, rgba(222,123,242,1) 100%);
+    padding: 5px;
+}
+#main-header #translator-bar a{
+    display: block;
+    text-align: right;
+    color: #FFF;
+}
+#main-header #translator-bar a img{
+    /*vertical-align: middle;*/
+}
+#main-header #logo{
+    border-bottom: 1px solid #b4b4b4;
+    text-align: center;
+    margin-top: 10px;
+}
+#main-header #social-networks{
+    text-align: right;
+    margin-top: -40px;
+    margin-right: 50px;
+}
+#main-header #social-networks a{
+    padding-left: 10px;
+}
+a{
+    text-decoration: none; 
+}
+p{
+    white-space: pre-line;
+}
+#navigator{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+#navigator a{
+    padding: 10px;
+    color: #000;
+}
+#navigator a:hover{
+    color: #9965e5;
+}
+.select{
+    background-color: #f9c8ff;
+    border-radius: 20px;
+}
+
+main #content1 img{
+    margin: 20px;
+}
+main #content1, main #content2{
+    text-align: center;
+}
+main #content2{
+    display: table;
+    margin: 0px auto;
+    padding: 20px;
+}
+main #content2 div{
+    width: 350px;
+    float: left;
+    text-align: justify;
+}
+main #content3 h3{
+    text-align: center;
+    margin-bottom: 0px;
+}
+main #content3 div div h3, main #content3 div div p{
+    margin: 0px;
+}
+main #content3 div div a{
+    float: right;
+}
+
+footer{
+    height: 100px;
+}
+footer #contact{
+    margin-left: 100px;
+    float: left;
+}
+footer #send{
+    margin-right: 100px;
+    margin-top: 30px;
+    float: right;
+    display: grid;    
+}
