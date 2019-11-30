@@ -39,7 +39,7 @@
         </header>
         <main>
             <div id="navigator">
-                <a href="#" class="select">INICIO</a>
+                <a href="index.html" class="select">INICIO</a>
                 <a href="#" style="border-right: 1px solid #b4b4b4;padding-left: 0px;padding-right: 0px;margin-right: 5px;"></a>
                 <a href="about_me.html">SOBRE MI</a>
                 <a href="#" style="border-right: 1px solid #b4b4b4;padding-left: 0px;padding-right: 0px;margin-right: 5px;"></a>
@@ -63,19 +63,32 @@
                 </div>
             </div>
             <div style="border-top: 1px solid #b4b4b4;width: 90%;margin: 0 auto;"></div>
+            <div id="sendMail" style="display: none">
+                <div id="box">
+                    <h3>ENVIAR CORREO</h3>
+                    <input id="name" type="text" placeholder="NOMBRE">
+                    <input id="mail" type="text" placeholder="CORREO">
+                    <input id="subject" type="text" placeholder="ASUNTO">
+                    <textarea id="subject" placeholder="MENSAJE" rows="5"></textarea>
+                    <div>
+                        <input id="submit" type="submit" onclick="alert('Su mensaje fue enviado con éxito.'); document.querySelector('#sendMail').style.display = 'none'">
+                        <input id="cancel" type="button" value="Cancelar" onclick="document.querySelector('#sendMail').style.display = 'none'">
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div id="contact">
                 <ul>
-                    <li>Angie K. Peña M.</li>
-                    <li>300-549-4347</li>
-                    <li>Beauty & Health</li>
-                    <li>contact@beautyspacenter.com</li>
+                    <li><img src="content/icons/user-solid.svg" width="13"> Angie K. Peña M.</li>
+                    <li><img src="content/icons/phone-alt-solid.svg" width="13"> 300-549-4347</li>
+                    <li><img src="content/icons/facebook-brands.svg" width="13"> Beauty & Health</li>
+                    <li><img src="content/icons/envelope-solid.svg" width="13"> contact@beautyspacenter.com</li>
                 </ul>
             </div>
             <div id="send">
                 Enviar:
-                <a href="#">Correo</a>
+                <a href="#" onclick="event.preventDefault(); document.querySelector('#sendMail').style.display = 'block'">Correo</a>
             </div>
         </footer>
         

@@ -29,6 +29,10 @@ a{
 p{
     white-space: pre-line;
 }
+li{
+    list-style: none;
+    font-style: italic;
+}
 #navigator{
     text-align: center;
     margin: 20px;
@@ -72,6 +76,62 @@ main #content3 div div h3, main #content3 div div p{
 main #content3 div div a{
     float: right;
 }
+main #content4, main #content5{
+    padding-top: 20px;
+}
+main #content4 h3, main #content5 h3{
+    text-align: center;
+}
+main #content4 div p, main #content5 div p{
+    text-align: justify;
+    width: 600px;
+    margin: 0px auto !important;
+    padding-top: 248px;
+    padding-bottom: 15px;
+}
+main #content4 div div{
+    width: 411px;
+    margin: 0px auto;
+}
+main #content5 div div{
+    width: 420px;
+    margin: 0px auto;
+}
+main #content5 img{
+    padding: 5px;
+}
+main #content5 p{
+    padding-top: 273px !important;
+    padding-bottom: 9px !important;
+}
+
+div#sendMail{
+    z-index: 1000;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+div#sendMail div#box{
+    width: 600px;
+    margin: 0px auto;
+    margin-top: 200px;
+    text-align: center;
+    display: grid;
+    background-color: rgba(244, 194, 228, 0.6);
+}
+div#sendMail div#box input[type="text"], div#sendMail div textarea{
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+div#sendMail div#box div input{
+    width: 130px;
+}
+div#sendMail div#box div{
+    padding-bottom: 15px;
+}
 
 footer{
     height: 100px;
@@ -85,4 +145,10 @@ footer #send{
     margin-top: 30px;
     float: right;
     display: grid;    
+}
+footer #send a{
+    color: #d277f0;
+}
+footer #send a:hover{
+    color: #845ee1;
 }
